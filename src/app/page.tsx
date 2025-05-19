@@ -4,10 +4,7 @@ import Contact from "@/components/Contact";
 import ExpCard from "@/components/ExpCard";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import { Inter } from "next/font/google";
 import { useEffect, useRef } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const auraRef = useRef<HTMLDivElement>(null);
