@@ -10,6 +10,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Ana Clara | Desenvolvedora Front-End",
   description: "Portfólio de Ana Clara Pontes, desenvolvedora front-end",
+  openGraph: {
+    title: "Ana Clara | Desenvolvedora Front-End",
+    description: "Portfólio de Ana Clara Pontes, desenvolvedora front-end",
+    images: [
+      {
+        url: "/preview.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
