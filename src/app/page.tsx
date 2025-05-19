@@ -4,7 +4,6 @@ import Contact from "@/components/Contact";
 import ExpCard from "@/components/ExpCard";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Projects from "@/components/Projects";
 import { Inter } from "next/font/google";
 import { useEffect, useRef } from "react";
 
