@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #eadfff;
+  --foreground: #180147;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #180147;
+    --foreground: #eadfff;
   }
 }
 
@@ -23,4 +23,61 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .mouse-aura {
+    @apply fixed inset-0 pointer-events-none;
+    background: radial-gradient(
+      700px circle at var(--mouse-x, 0) var(--mouse-y, 0),
+      rgba(32, 1, 94, 0.3) 0%,
+      rgba(32, 1, 94, 0.5) 30%,
+      rgba(32, 1, 94, 0) 50%
+    );
+  }
+}
+
+@layer base {
+  .nav-indicator {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    height: 1px;
+    width: 2rem;
+    background-color: #bdb2ff;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .group:hover .nav-indicator,
+  .group:focus-within .nav-indicator {
+    width: 4rem;
+    height: 2px;
+    background-color: var(--foreground);
+  }
+
+  .nav-indicator.active,
+  .group .nav-indicator.active {
+    width: 4rem;
+    height: 2px;
+    background-color: var(--foreground);
+  }
+
+  .dark .group:hover .nav-indicator,
+  .dark .group:focus-within .nav-indicator {
+    background-color: var(--foreground);
+  }
+
+  .dark .nav-indicator.active,
+  .dark .group .nav-indicator.active {
+    background-color: var(--foreground);
+  }
+}
+
+@keyframes spin-gradient {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-gradient {
+  animation: spin-gradient 2s linear infinite;
 }
