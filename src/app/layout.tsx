@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Ana Clara | Desenvolvedora Front-End",
   description: "Portfólio de Ana Clara Pontes, desenvolvedora front-end",
+  icons: {
+    icon: "/anaclara.jpeg",
+  },
   openGraph: {
     title: "Ana Clara | Desenvolvedora Front-End",
     description: "Portfólio de Ana Clara Pontes, desenvolvedora front-end",
