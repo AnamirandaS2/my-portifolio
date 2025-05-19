@@ -80,14 +80,14 @@ export default function ExpCard() {
     <section id="experience" className="scroll-mt-16 lg:mt-16">
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen  px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
-          Experience
+          Experiências
         </h2>
       </div>
       <>
         {jobPositions.map((job, index) => (
           <Card
             key={index}
-            className="group lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-0 lg:gap-5 border border-white/10 bg-[#180147]/80 rounded-xl transition duration-300 hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg hover:border-white/20 md:px-3"
+            className="group lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-0 lg:gap-5 border border-white/10 bg-[#180147]/80 rounded-xl transition duration-300 hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg hover:border-white/20 md:px-3 px-3"
           >
             <CardHeader className="h-full w-full p-0 lg:w-1/4 flex-shrink-0 flex items-center ">
               <CardTitle className="flex items-center text-gray-500 text-xs whitespace-nowrap ">

@@ -9,11 +9,11 @@ export default function Footer() {
           <a className="" href="https://brittanychiang.com">
             Brittany Chiang
           </a>{" "}
-          . Coded in{" "}
+          . Desenvolvido com{" "}
           <a className="" href="https://code.visualstudio.com/">
             Visual Studio Code.
           </a>{" "}
-          Built with{" "}
+          Construido com{" "}
           <a className="d" href="https://nextjs.org/">
             Next.js
           </a>
@@ -25,7 +25,7 @@ export default function Footer() {
           <a className="" href="https://ui.shadcn.com/">
             Shadcn/ui
           </a>
-          , deployed with{" "}
+          , e deploy com{" "}
           <a className="" href="https://vercel.com/">
             Vercel
           </a>
